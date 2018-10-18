@@ -1,0 +1,142 @@
+/*Custom Fonts*/
+@font-face {
+    font-family: "Pacifica Condensed";
+    src: url("../css/fonts/Pacifica Condensed Regular.ttf");
+}
+
+
+
+
+
+/*HTML*/
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+
+/*Body*/
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+
+
+
+
+/*Navigation*/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: #262626;
+  z-index: 2;
+}
+
+.nav .links {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.nav .links a {
+  padding: 1vw 2vw;
+  letter-spacing: 0.2vw;
+  font-size: 1vw;
+  color: white;
+  text-decoration: none;
+  color: #A0A0A0;
+  font-family: 'Pacifica Condensed', Helvetica, bgBold;
+  float: right;
+}
+
+.nav .links a:hover {
+  color: #08D616;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.nav .links .current {
+  color: #08D616;
+  background-color: rgba(0,0,0,0.1);
+}
+
+
+
+
+
+/*Cover*/
+.cover {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  top: 20%;
+  background-image: url("../images/cover.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 1vw black;
+  border-left-style: none;
+  border-right-style: none;
+  box-shadow: 0 0 1vw 1vw black inset;
+  z-index: -1;
+  animation-name: cover;
+  animation-duration: 6s;
+}
+
+@keyframes cover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/*Sub Navigation*/
+.sub-nav {
+  position: fixed;
+  width: 100%;
+  height: 0.1vw;
+  top: 3vw;
+  bottom: auto;
+  padding: 2vw;
+  background-color: #0D0D0D;
+}
+
+.sub-nav a {
+  position: relative;
+  padding: 0 4vw;
+}
+
+.sub-nav a i {
+  position: relative;
+  top: -0.5vw;
+  left: 33%;
+  font-size: 1.5vw;
+  color: #A0A0A0;
+}
+
+.sub-nav a i:hover {
+  color: white;
+}
+
+
+
+
+
+/*About*/
+.about {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
