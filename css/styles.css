@@ -71,9 +71,54 @@ body {
 
 
 
+/*Sub Navigation*/
+.sub-nav {
+  position: fixed;
+  width: 100%;
+  height: 0.1vw;
+  top: 3vw;
+  bottom: auto;
+  padding: 2vw;
+  background-color: #0D0D0D;
+  z-index: 2;
+}
+
+.sub-nav a {
+  position: relative;
+  padding: 0 4vw;
+}
+
+.sub-nav a i {
+  position: relative;
+  top: -0.5vw;
+  left: 33%;
+  font-size: 1.5vw;
+  color: #A0A0A0;
+}
+
+.sub-nav a i:hover {
+  color: white;
+}
+
+
+
+
+
+/*Top*/
+.top {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+
+
+
+
 /*Cover*/
 .cover {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 75%;
   top: 20%;
@@ -100,33 +145,36 @@ body {
 
 
 
-
-
-/*Sub Navigation*/
-.sub-nav {
-  position: fixed;
+/*Home Cover*/
+.home-cover {
+  position: absolute;
   width: 100%;
-  height: 0.1vw;
-  top: 3vw;
-  bottom: auto;
-  padding: 2vw;
-  background-color: #0D0D0D;
+  height: 75%;
+  top: 20%;
+  background-image: url("../images/cover.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 1vw black;
+  border-left-style: none;
+  border-right-style: none;
+  box-shadow: 0 0 1vw 1vw black inset;
+  z-index: -1;
 }
 
-.sub-nav a {
-  position: relative;
-  padding: 0 4vw;
+
+
+
+
+/*Back to Top*/
+.toTop {
+  position: fixed;
+  top: 91.5%;
+  left: 95%;
+  z-index: 2;
 }
 
-.sub-nav a i {
-  position: relative;
-  top: -0.5vw;
-  left: 33%;
-  font-size: 1.5vw;
-  color: #A0A0A0;
-}
-
-.sub-nav a i:hover {
+.toTop i {
+  font-size: 2vw;
   color: white;
 }
 
@@ -139,4 +187,41 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.about h1 {
+  position: absolute;
+  top: 15%;
+}
+
+
+
+
+
+/*Gallery*/
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery h1 {
+  position: absolute;
+  top: 15%;
+}
+
+
+
+
+
+/*Contact*/
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contact h1 {
+  position: absolute;
+  top: 15%;
 }
